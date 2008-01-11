@@ -1,0 +1,4 @@
+#!/bin/sh
+perl -i -ple 's/^nan/0.0/' paper.pdf
+rsync -v paper.pdf coltrane:public_html/traffic_models.pdf
+rsync -v paper.tex coltrane:public_html/traffic_models.tex
